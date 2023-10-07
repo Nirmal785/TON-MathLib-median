@@ -24,6 +24,6 @@ Repo Rules:
 
 Telegram - [https://t.me/alirezatabatabaeian](https://t.me/alirezatabatabaeian)
 
-Hacktonberfest Rules:
 
-Hacktonberfest Rules - [https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023](https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023)
+Hacktonberfest Rules: [https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023](https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023)
+Hack-TON-Berfest Telegram Group: [https://t.me/hack_ton_berfest_2023](https://t.me/hack_ton_berfest_2023)
