@@ -24,7 +24,7 @@ Repo Rules:
 
 Telegram - [https://t.me/alirezatabatabaeian](https://t.me/alirezatabatabaeian)
 
-3- You can re-solve the solved issues but the our priority is the unsolved functions.
+3- You can re-solve the solved issues but our priority is unsolved functions.
 
 Hacktonberfest Rules: [https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023](https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023)
 
