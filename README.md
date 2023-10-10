@@ -3,7 +3,6 @@
 This repo includes the most important mathematical functions in FunC for training purposes. However, some mathematical functions on The Open Network might be useful in real infrastructure contracts such as Oracles and Reputation Systems.
 
 Required math functions will be listed below:
-
 - Linear Function
 - Quadratic Function
 - Median Function
