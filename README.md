@@ -28,7 +28,6 @@ Math function will be listed below:
 
 The required functions will be available through issues page.
 Feel free to fork this repo, work on issues and make pull request.
-
 Also, new ideas for math functions are welcomed. You can create issuse or make PR directly!
 
 To make PR, you must follow both the repository and hacktonberfest rules:
