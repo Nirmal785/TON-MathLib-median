@@ -23,7 +23,7 @@ Required math functions will be listed below:
 - Greatest Common Divisor Function
 - Least Common Multiple Function
 - Solve Quadratic Equation Function
-\
+
 \
 **Hack-TON-Berfest Update:**
 
