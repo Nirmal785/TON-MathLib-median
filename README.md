@@ -26,7 +26,6 @@ Required math functions will be listed below:
 
 \
 \
-\
 **Hack-TON-Berfest Update:**
 
 The required functions will be available through issues page.\
