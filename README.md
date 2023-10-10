@@ -2,14 +2,31 @@
 
 This repo includes the most important mathematical functions in FunC for training purposes. However, some mathematical functions on The Open Network might be useful in real infrastructure contracts such as Oracles and Reputation Systems.
 
-Any finished math function will be listed below:
+Math function will be listed below:
 
-- .
+- Linear Function
+- Quadratic Function
+- Median Function
+- Weighted-Median Function
+- Mode Function
+- Power Function
+- Square-Root Function
+- Cube-Root Function
+- Log2 Function
+- Log10 Function
+- Sin Function
+- Cos Function
+- Tan Function
+- Cotan Function
+- isPrime Function
+- Factorial Function
+- Greatest Common Divisor Function
+- Least Common Multiple Function
+- Solve Quadratic Equation Function
 
 **Hack-TON-Berfest Update:**
 
 The required functions will be available through issues page.
-
 Feel free to fork this repo, work on issues and make pull request.
 
 Also, new ideas for math functions are welcomed. You can create issuse or make PR directly!
