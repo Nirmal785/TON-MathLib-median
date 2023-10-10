@@ -25,6 +25,8 @@ Required math functions will be listed below:
 - Solve Quadratic Equation Function
 
 \
+\
+\
 **Hack-TON-Berfest Update:**
 
 The required functions will be available through issues page.\
