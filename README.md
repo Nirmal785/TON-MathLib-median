@@ -24,7 +24,8 @@ Required math functions will be listed below:
 - Solve Quadratic Equation Function
 
 \
-**Hack-TON-Berfest Update:\
+**Hack-TON-Berfest Update:
+
 The required functions will be available through issues page.\
 Feel free to fork this repo, create your own branch, work on issues and make pull request to main branch.\
 Also, new ideas for math functions are welcomed. You can create issuse or make PR directly!\
