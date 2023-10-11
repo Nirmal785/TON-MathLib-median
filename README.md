@@ -28,7 +28,7 @@ Required math functions will be listed below:
 
 **The required functions will be available through issues page.\
 Feel free to fork this repo, create your own branch, work on issues and make pull request to main branch.\
-Also, new ideas for math functions are welcomed. You can create issuse or make PR directly!\
+Also, new ideas for math functions or new tests for previously implemented functions are welcomed. You can create issuse or make PR directly!\
 To make PR, you must follow both the repository and hacktonberfest rules:\
 1- You can only make 1 PR. If you want to do more, [message me](http://t.me/alirezatabatabaeian).\
 2- Your PRs must include your Telegram ID like this: 
