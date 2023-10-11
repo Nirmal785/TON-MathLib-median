@@ -28,21 +28,14 @@ Required math functions will be listed below:
 **Hack-TON-Berfest Update:**
 
 The required functions will be available through issues page.\
-Feel free to fork this repo, work on issues and make pull request.\
+Feel free to fork this repo, create your own branch, work on issues and make pull request to main branch.\
 Also, new ideas for math functions are welcomed. You can create issuse or make PR directly!
 
-To make PR, you must follow both the repository and hacktonberfest rules:
-
-Repo Rules:
-
-1- You can only make 1 PR. If you want to do more, [message me](http://t.me/alirezatabatabaeian).
-
-2- Your PRs must include your Telegram ID like below:
-
-Telegram - [https://t.me/alirezatabatabaeian](https://t.me/alirezatabatabaeian)
-
-3- You can re-solve the solved issues but our priority is unsolved functions.
-
-Hacktonberfest Rules: [https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023](https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023)
+To make PR, you must follow both the repository and hacktonberfest rules:\
+1- You can only make 1 PR. If you want to do more, [message me](http://t.me/alirezatabatabaeian).\
+2- Your PRs must include your Telegram ID like this: 
+Telegram - [https://t.me/alirezatabatabaeian](https://t.me/alirezatabatabaeian)\
+3- You can re-solve the solved issues but our priority is unsolved functions.\
+4- Hack-TON-Berfest Rules: [https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023](https://github.com/alefmanvladimir/HACK-TON-BERFEST-2023)
 
 Hack-TON-Berfest Telegram Group: [https://t.me/hack_ton_berfest_2023](https://t.me/hack_ton_berfest_2023)
