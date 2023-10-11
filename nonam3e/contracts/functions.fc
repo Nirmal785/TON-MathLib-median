@@ -64,7 +64,7 @@ int powmod(int a, int n, int m) inline {
 int log2(int a) asm "UBITSIZE DEC";
 
 int log10(int a) inline {
-    return log2(a) / 4;
+    return muldiv(log2(a), 10000000000000000, 33219280948873626);
 }
 
 int log(int a, int b) inline {
