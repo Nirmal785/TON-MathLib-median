@@ -1,0 +1,20 @@
+#include "imports/stdlib.fc";
+
+(int) tlen (tuple t) asm "TLEN";
+
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+
+}
+
+tuple linear_function(tuple input, int slope, int y_intercept) method_id {
+    tuple output = empty_tuple();
+    int length = input.tlen();
+    
+    int index = 0;
+    repeat(length){
+        output~tpush(slope * input.at(index) + y_intercept);
+        index += 1;
+    }
+
+    return output;
+}
