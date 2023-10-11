@@ -34,7 +34,6 @@ How to collaborate?
 - Re-Implement the implemented functions in a more optimum way
 - Write more tests for implemented functions
 
-\
 How to make PR?
 - Make sure to register in [the bot](https://t.me/hacktonberfest_bot) and [join the group](https://t.me/hack_ton_berfest_2023)
 - Fork this repo
