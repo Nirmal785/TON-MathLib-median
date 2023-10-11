@@ -26,7 +26,7 @@ Required math functions will be listed below:
 \
 **Hack-TON-Berfest Update :**
 
-How to collaborate? (see issues page)
+How to collaborate?
 - Write the above functions in FunC
 - Write the above functions in Tact
 - Implement your own idea and then make PR
@@ -38,7 +38,7 @@ How to make PR?
 - Make sure to register in [the bot](https://t.me/hacktonberfest_bot) and [join the group](https://t.me/hack_ton_berfest_2023)
 - Fork this repo
 - Create a new branch in your forked repo
-- Choose one issue and work on that
+- Choose one issue(from the issues page) and work on that
 - Commit to your new branch
 - Make PR to our repo
 - Make sure your PR has a comment which must include your Telegram ID like below:\
