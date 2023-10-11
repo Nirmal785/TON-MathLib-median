@@ -33,12 +33,12 @@ How to collaborate? (see issues page)
 - Re-Implement the implemented functions in a more optimum way
 - Write more tests for implemented functions
 
-How to make PR?\
-1- Make sure to register in [the bot](https://t.me/hacktonberfest_bot) and [join the group](https://t.me/hack_ton_berfest_2023)
-2- Fork this repo
-3- Create a new branch in your forked repo
-4- Choose one issue and work on that
-5- Commit to your new branch
-6- Make PR to our repo
-7- Make sure your PR has a comment which must include your Telegram ID like below:\
+How to make PR?
+- Make sure to register in [the bot](https://t.me/hacktonberfest_bot) and [join the group](https://t.me/hack_ton_berfest_2023)
+- Fork this repo
+- Create a new branch in your forked repo
+- Choose one issue and work on that
+- Commit to your new branch
+- Make PR to our repo
+- Make sure your PR has a comment which must include your Telegram ID like below:\
 Telegram - [https://t.me/alirezatabatabaeian](https://t.me/alirezatabatabaeian)
