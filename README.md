@@ -24,6 +24,7 @@ Required math functions will be listed below:
 - Solve Quadratic Equation Function
 
 \
+\
 **Hack-TON-Berfest Update :**
 
 How to collaborate?
