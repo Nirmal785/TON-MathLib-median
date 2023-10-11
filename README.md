@@ -26,7 +26,6 @@ Required math functions will be listed below:
 \
 **Hack-TON-Berfest Update :**
 
-\
 How to collaborate? (see issues page)
 - Write the above functions in FunC
 - Write the above functions in Tact
