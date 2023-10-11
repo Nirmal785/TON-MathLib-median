@@ -1,22 +1,11 @@
 #include "imports/stdlib.fc";
 
+const int error::invalid_value = 256;
+
 (int) tlen (tuple t) asm "TLEN";
 
 () recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
 
-}
-
-tuple linear_function(tuple input, int slope, int y_intercept) method_id {
-    tuple output = empty_tuple();
-    int length = input.tlen();
-    
-    int index = 0;
-    repeat(length){
-        output~tpush(slope * input.at(index) + y_intercept);
-        index += 1;
-    }
-
-    return output;
 }
 
 int mulmod(int a, int b, int c) inline {
@@ -37,6 +26,12 @@ int lcm(int a, int b) inline {
 }
 
 int pow(int a, int n) inline {
+    if (a = 0 & n == 0) {
+        return 1;
+    }
+    if (a == 0) {
+        return 0;
+    }
     int res = 1;
     while(n) {
         if (n & 1) {
@@ -49,6 +44,12 @@ int pow(int a, int n) inline {
 }
 
 int powmod(int a, int n, int m) inline {
+    if (a = 0 & n == 0) {
+        return 1;
+    }
+    if (a == 0) {
+        return 0;
+    }
     int res = 1;
     while(n) {
         if (n & 1) {
@@ -60,7 +61,7 @@ int powmod(int a, int n, int m) inline {
     return res;
 }
 
-int log2(int a) asm "UBITSIZE";
+int log2(int a) asm "DEC UBITSIZE";
 
 int log10(int a) inline {
     return log2(a) / 4;
@@ -94,6 +95,10 @@ int cbrt(int n) inline {
 }
 
 int is_prime_fermat(int n, int k) inline {
+    throw_if(error::invalid_value, (n <= 0) | (k < 1));
+    if (n <= 3) {
+        return true;
+    }
     int a = 0;
     randomize_lt();
     while (k > 0) {
