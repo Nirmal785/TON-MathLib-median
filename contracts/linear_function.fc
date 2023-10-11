@@ -1,0 +1,124 @@
+#include "imports/stdlib.fc";
+
+(int) tlen (tuple t) asm "TLEN";
+
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+
+}
+
+tuple linear_function(tuple input, int slope, int y_intercept) method_id {
+    tuple output = empty_tuple();
+    int length = input.tlen();
+    
+    int index = 0;
+    repeat(length){
+        output~tpush(slope * input.at(index) + y_intercept);
+        index += 1;
+    }
+
+    return output;
+}
+
+int mulmod(int a, int b, int c) inline {
+    (_,int res) = muldivmod(a, b, c);
+    return res;
+}
+
+int gcd(int a, int b) inline {
+    while (b != 0) {
+        a %= b;
+        (a, b) = (b, a);
+    }
+    return a;
+}
+
+int lcm(int a, int b) inline {
+    return a / gcd(a, b) * b;
+}
+
+int pow(int a, int n) inline {
+    int res = 1;
+    while(n) {
+        if (n & 1) {
+            res *= a;
+        }
+        a *= a;
+        n >>= 1;
+    }
+    return res;
+}
+
+int powmod(int a, int n, int m) inline {
+    int res = 1;
+    while(n) {
+        if (n & 1) {
+            res = mulmod(res, a, m);
+        }
+        a *= mulmod(a, a, m);
+        n >>= 1;
+    }
+    return res;
+}
+
+int log2(int a) asm "UBITSIZE";
+
+int log10(int a) inline {
+    return log2(a) / 4;
+}
+
+int log(int a, int b) inline {
+    return log2(a) / log2(b);
+}
+
+int sqrt(int a) inline {
+    int shift = log2(a);
+    a += a & 1;
+    int result = 0;
+    do {
+        shift -= 2;
+        result <<= 1;
+        result |= 1;
+        if (result * result > (a >> shift)) {
+            result ^= 1;
+        }
+    } until (shift != 0);
+    return result;
+}
+
+int cbrt(int n) inline {
+    int res = n;
+    while (res * res * res > n) {
+        res = (res * 2 + n / (res * res)) / 3;
+    }
+    return res;
+}
+
+int is_prime_fermat(int n, int k) inline {
+    int a = 0;
+    randomize_lt();
+    while (k > 0) {
+        a = rand(n - 4) + 2;
+        if (gcd(n, a) != 1) {
+            return false;
+        }
+        if (powmod(a, n - 1, n) != 1) {
+            return false;
+        }
+        k -= 1;
+    }
+    return true;
+}
+
+int factmod(int n, int p) {
+	int res = 1;
+	while (n > 1) {
+		res = (res * ((n / p) % 2 ? p - 1 : 1)) % p;
+        int i = 2;
+		while (i <= n % p) {
+			res = (res * i) % p;
+            i += 1;
+        }
+		n /= p;
+	}
+	return res % p;
+}
