@@ -1,0 +1,21 @@
+#include "imports/stdlib.fc";
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+
+}
+
+int factorial_ton(int requested_number) method_id {
+    if(requested_number == 0){
+        return 1;
+    }
+    elseif(requested_number == 1){
+        return 1;
+    }
+    
+    int factorial = 1;
+    repeat(requested_number - 1){
+        factorial *= requested_number;
+        requested_number -= 1;
+    }
+
+    return factorial;
+}
