@@ -1,0 +1,15 @@
+#include "imports/stdlib.fc";
+(int) tlen (tuple t) asm "TLEN";
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+
+}
+
+tuple quadratic(tuple x, int a, int b, int c) method_id {
+    int index = 0;
+    tuple results = empty_tuple();
+    repeat(x.tlen()){
+        results~tpush(a * x.at(index) * x.at(index) + b * x.at(index) + c);
+        index += 1;
+    }
+    return results;
+}
