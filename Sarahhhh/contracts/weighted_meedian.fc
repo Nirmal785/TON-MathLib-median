@@ -1,0 +1,36 @@
+#include "imports/stdlib.fc";
+
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+
+}
+
+int is_between?(int min, int middle, int max) { ;; check if min <= middle <= max
+    return (min <= middle) & (middle <= max);
+}
+
+int weighted_median(cell reports) method_id { ;; calculate weighted median
+    int sum_of_weights = 0;
+    (int value, slice weight, int flag) = reports.udict_get_min?(32); ;; calculate the sum of all weights
+    while (flag){
+        sum_of_weights += weight.preload_uint(32);
+        (value, weight, flag) = reports.udict_get_next?(32, value);
+    }
+
+    tuple median = empty_tuple();
+    int R_weights = sum_of_weights;
+    (int value, slice weight, int flag) = reports.udict_get_min?(32); ;; find the element which satisfies
+    while (flag){                                                             ;; the rules for weighted median
+        int present_weight = weight.preload_uint(32);
+        R_weights -= present_weight;
+        if (is_between?(sum_of_weights - 2 * present_weight, 2 * R_weights, sum_of_weights)){
+            median~tpush(value);
+        }
+        (value, weight, flag) = reports.udict_get_next?(32, value);
+    }
+
+    if (median.tlen() == 1){ ;; if we have two elements, we have to calculate the average
+        return median.at(0);
+    } else {
+        return (median.at(0) + median.at(1)) / 2;
+    }
+}
