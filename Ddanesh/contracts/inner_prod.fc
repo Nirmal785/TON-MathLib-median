@@ -1,0 +1,30 @@
+#include "imports/stdlib.fc";
+
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+
+}
+
+(int) tuple_length (tuple t) asm "TLEN";
+
+(int) inner_prod(tuple first_vec, tuple second_vec) method_id {
+
+    int len_vec1 = tuple_length(first_vec);
+
+    int len_vec2 = tuple_length(second_vec);
+
+    throw_unless(111, len_vec1 == len_vec2);
+
+    int index = 0;
+
+    int out = 0;
+
+    repeat(len_vec1){
+
+        out += first_vec.at(index) * second_vec.at(index);
+
+        index += 1;
+
+    }
+
+    return out;
+}
