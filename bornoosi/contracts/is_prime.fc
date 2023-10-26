@@ -1,0 +1,21 @@
+#include "imports/stdlib.fc";
+
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+
+}
+
+int isPrime(int number) method_id {
+    if(number == 2){
+        return -1;
+    }
+    int number_of_divisors = 0;
+    int divisor = 2;
+    while(divisor < number){
+        (_, int r) = divmod(number, divisor);
+        if(r == 0){
+            number_of_divisors += 1;
+        }
+        divisor += 1;
+    }
+    return (number_of_divisors == 0);
+}
