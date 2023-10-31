@@ -87,11 +87,15 @@ int sqrt(int a) inline {
 }
 
 int cbrt(int n) inline {
-    int res = n;
-    while (res * res * res > n) {
-        res = (res * 2 + n / (res * res)) / 3;
+    
+    int val = n/3;
+    int temp = 0;
+
+    while (val!=temp) {
+        temp = val;
+        val = (n/(temp*temp) + (temp*2))/3;
     }
-    return res;
+    return val;
 }
 
 int is_prime_fermat(int n, int k) inline {
