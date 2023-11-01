@@ -143,3 +143,7 @@ int median(int t){
     else:
     return (sorted_t[length // 2] + sorted_t[length // 2 - 1]) / 2
 }
+
+function quadratic(x: tuple, a: int, b: int, c: int) -> int
+  return a * x^2 + b * x + c
+end function
