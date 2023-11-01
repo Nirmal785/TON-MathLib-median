@@ -147,3 +147,39 @@ int median(int t){
 function quadratic(x: tuple, a: int, b: int, c: int) -> int
   return a * x^2 + b * x + c
 end function
+
+
+function sin_degree(degree: int) -> float {
+  if degree < 0 || degree > 90 {
+    error("The angle must be between 0 and 90 degrees.");
+  }
+
+  let radians = degree * 3.14159265359 / 180.0;  // Convert degrees to radians 
+  let sine = sin(radians);
+
+  return sine;
+}
+
+
+function tan_degree(degree: int) -> float {
+  if degree < 0 || degree >= 90 {
+    error("The angle must be between 0 and 90 degrees (exclusive).");
+  }
+
+  let radians = degree * 3.14159265359 / 180.0;  // Convert degrees to radians
+  let tangent = tan(radians);
+
+  return tangent;
+}
+
+
+function cos_degree(degree: int) -> float {
+  if degree < 0 || degree >= 90 {
+    error("The angle must be between 0 and 90 degrees (exclusive).");
+  }
+
+  let radians = degree * 3.14159265359 / 180.0;  // Convert degrees to radians
+  let cosine = cos(radians);
+
+  return cosine;
+}
