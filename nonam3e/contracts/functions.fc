@@ -131,3 +131,15 @@ int factmod(int n, int p) {
 	}
 	return res % p;
 }
+
+
+int median(int t){
+    sorted_t = sorted(t)
+  length = len(sorted_t)
+   
+    if length % 2 == 1:
+    return sorted_t[length // 2]
+
+    else:
+    return (sorted_t[length // 2] + sorted_t[length // 2 - 1]) / 2
+}
